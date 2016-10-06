@@ -17,10 +17,10 @@ $(function () {
   var salesChart = new Chart(salesChartCanvas);
 
   var salesChartData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro"],
     datasets: [
       {
-        label: "Electronics",
+        label: "Vendas Revendedores",
         fillColor: "rgb(210, 214, 222)",
         strokeColor: "rgb(210, 214, 222)",
         pointColor: "rgb(210, 214, 222)",
@@ -30,7 +30,7 @@ $(function () {
         data: [65, 59, 80, 81, 56, 55, 40]
       },
       {
-        label: "Digital Goods",
+        label: "Vendas Site",
         fillColor: "rgba(60,141,188,0.9)",
         strokeColor: "rgba(60,141,188,0.8)",
         pointColor: "#3b8bba",
