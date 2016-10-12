@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>KikADMIN | Painel de controle</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href=<?php $_SERVER['DOCUMENT_ROOT']?>"/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href=<?php $_SERVER['DOCUMENT_ROOT']?>"/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/css/skins/_all-skins.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <a href="index.php" class="logo">
+    <a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/index.php" class="logo">
       <span class="logo-mini"><b>Kik</b></span>
       <span class="logo-lg"><b>Kik</b>ADMIN</span>
     </a>
@@ -43,7 +43,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Diego Lima - Gerente
@@ -56,7 +56,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Ruan - Teste
@@ -68,7 +68,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Márcio - Diretor
@@ -80,7 +80,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Sistema
@@ -138,13 +138,13 @@
           
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user6-128x128.jpg" class="user-image" alt="User Image">
+              <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Ermesom Lourenço</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user6-128x128.jpg" class="img-circle" alt="User Image">
+                <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Ermesom Lourenço - Web Developer
@@ -190,7 +190,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Ermesom Lourenço</p>
@@ -211,15 +211,15 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MENU PRINCIPAL</li>
-        <li class="active treeview">
-          <a href="index.php">
+        <li class="treeview">
+          <a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/index.php">
             <i class="fa fa-dashboard"></i> <span>Painel de controle</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.php"><i class="fa fa-circle-o"></i> Painel de controle</a></li>
+            <li class="active"><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/index.php"><i class="fa fa-circle-o"></i> Painel de controle</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -231,7 +231,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Clientes</a></li>
+            <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/cadastros/clientes.php"><i class="fa fa-circle-o"></i> Clientes</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Produtos\Serviços</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Usuários</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Categorias\Redes sociais</a></li>
@@ -276,7 +276,7 @@
             </span>
           </a>
         </li>
-        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Ajuda</span></a></li>
+        <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/documentation/index.html"><i class="fa fa-book"></i> <span>Ajuda</span></a></li>
         <li class="header">Legendas</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
@@ -285,3 +285,6 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+
+  <!-- Div que alinha as informações da página no espaço feita para tal, respeitando a parte de menu e top -->
+  <div class="content-wrapper">
