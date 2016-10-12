@@ -219,9 +219,8 @@
 <script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- ChartJS 1.0.1 -->
 <script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/plugins/chartjs/Chart.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/js/pages/dashboard2.js"></script>
+
 <!-- AdminLTE for demo purposes -->
-<script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/js/demo.js"></script>
+<!--<script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/js/demo.js"></script>-->
 </body>
 </html>

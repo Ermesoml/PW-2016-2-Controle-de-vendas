@@ -351,7 +351,10 @@
     <!-- /.row -->
   </section>
     <!-- /.content -->
-
+  
 <?php
   include_once("./functions/footer.php")
 ?>
+
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/js/pages/dashboard2.js"></script>
