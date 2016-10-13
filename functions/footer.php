@@ -126,49 +126,49 @@
       <!-- Settings tab content -->
       <div class="tab-pane" id="control-sidebar-settings-tab">
         <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
+          <h3 class="control-sidebar-heading">Configurações Gerais</h3>
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Report panel usage
+              Painel de Relatorio
               <input type="checkbox" class="pull-right" checked>
             </label>
 
             <p>
-              Some information about this general settings option
+              Algumas informações sobre esta opção de configurações gerais
             </p>
           </div>
           <!-- /.form-group -->
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Allow mail redirect
+              Mudança de correio
               <input type="checkbox" class="pull-right" checked>
             </label>
 
             <p>
-              Other sets of options are available
+              Outras opções disponiveis
             </p>
           </div>
           <!-- /.form-group -->
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Expose author name in posts
+              Nome dos autores
               <input type="checkbox" class="pull-right" checked>
             </label>
 
             <p>
-              Allow the user to show his name in blog posts
+              Permitir que o usuário mostre seu nome nas postagens do blog
             </p>
           </div>
           <!-- /.form-group -->
 
-          <h3 class="control-sidebar-heading">Chat Settings</h3>
+          <h3 class="control-sidebar-heading">Configuração de bate papo</h3>
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Show me as online
+              Mostrar os onlinnes
               <input type="checkbox" class="pull-right" checked>
             </label>
           </div>
@@ -176,7 +176,7 @@
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Turn off notifications
+              Desativar notificações
               <input type="checkbox" class="pull-right">
             </label>
           </div>
@@ -184,7 +184,7 @@
 
           <div class="form-group">
             <label class="control-sidebar-subheading">
-              Delete chat history
+              Apagar historico de conversas
               <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
             </label>
           </div>
