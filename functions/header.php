@@ -24,7 +24,7 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Alternar navegação</span>
       </a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
@@ -47,7 +47,7 @@
                       </div>
                       <h4>
                         Diego Lima - Gerente
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        <small><i class="fa fa-clock-o"></i> 5 minutos</small>
                       </h4>
                       <p>Como está o andamento do projeto ADM?</p>
                     </a>
@@ -60,7 +60,7 @@
                       </div>
                       <h4>
                         Ruan - Teste
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
                       </h4>
                       <p>Precisamos rever aquela regra de negócio.</p>
                     </a>
@@ -72,7 +72,7 @@
                       </div>
                       <h4>
                         Márcio - Diretor
-                        <small><i class="fa fa-clock-o"></i> Today</small>
+                        <small><i class="fa fa-clock-o"></i> Hoje</small>
                       </h4>
                       <p>Já utilizou WebBrocker do Delphi?</p>
                     </a>
@@ -84,7 +84,7 @@
                       </div>
                       <h4>
                         Sistema
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        <small><i class="fa fa-clock-o"></i> 2 dias</small>
                       </h4>
                       <p>Resultado do mês de marco.</p>
                     </a>
@@ -278,9 +278,9 @@
         </li>
         <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/documentation/index.html"><i class="fa fa-book"></i> <span>Ajuda</span></a></li>
         <li class="header">Legendas</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Importante</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Alerta</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Infromação</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
