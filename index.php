@@ -150,7 +150,7 @@
               <div class="col-sm-3 col-xs-6">
                 <div class="description-block border-right">
                   <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                  <h5 class="description-header">$35,210.43</h5>
+                  <h5 class="description-header">R$35,210.43</h5>
                   <span class="description-text">TOTAL BRUTO</span>
                 </div>
                 <!-- /.description-block -->
@@ -159,7 +159,7 @@
               <div class="col-sm-3 col-xs-6">
                 <div class="description-block border-right">
                   <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                  <h5 class="description-header">$10,390.90</h5>
+                  <h5 class="description-header">R$10,390.90</h5>
                   <span class="description-text">CUSTO TOTAL</span>
                 </div>
                 <!-- /.description-block -->
@@ -168,7 +168,7 @@
               <div class="col-sm-3 col-xs-6">
                 <div class="description-block border-right">
                   <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                  <h5 class="description-header">$24,813.53</h5>
+                  <h5 class="description-header">R$24,813.53</h5>
                   <span class="description-text">TOTAL_LIQUIDO</span>
                 </div>
                 <!-- /.description-block -->
@@ -210,7 +210,7 @@
               <div class="progress-bar" style="width: 50%"></div>
             </div>
                 <span class="progress-description">
-                  50% Increase in 30 Days
+                  Aumento de 50% em 30 dias
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -227,7 +227,7 @@
               <div class="progress-bar" style="width: 20%"></div>
             </div>
                 <span class="progress-description">
-                  20% Increase in 30 Days
+                  Aumento de 30% em 30 dias
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -244,7 +244,7 @@
               <div class="progress-bar" style="width: 70%"></div>
             </div>
                 <span class="progress-description">
-                  70% Increase in 30 Days
+                  Aumento de 70% em 30 dias
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -261,7 +261,7 @@
               <div class="progress-bar" style="width: 40%"></div>
             </div>
                 <span class="progress-description">
-                  40% Increase in 30 Days
+                  Aumento de 40% em 30 dias
                 </span>
           </div>
           <!-- /.info-box-content -->
@@ -291,7 +291,7 @@
                 </div>
                 <div class="product-info">
                   <a href="javascript:void(0)" class="product-title">90 dias servidor - Instagram
-                    <span class="label label-warning pull-right">$320</span></a>
+                    <span class="label label-warning pull-right">R$320</span></a>
                       <span class="product-description">
                         @perfilcliente. Tags: Vendas, Outback, Outratag
                       </span>
@@ -304,7 +304,7 @@
                 </div>
                 <div class="product-info">
                   <a href="javascript:void(0)" class="product-title">30 dias servidor - Instagram
-                    <span class="label label-info pull-right">$150</span></a>
+                    <span class="label label-info pull-right">R$150</span></a>
                       <span class="product-description">
                         @perfilcliente. Tags: Vendas, Outback, Outratag
                       </span>
@@ -316,7 +316,7 @@
                   <img src="dist/img/default-50x50.gif" alt="Product Image">
                 </div>
                 <div class="product-info">
-                  <a href="javascript:void(0)" class="product-title">30 dias servidor - Instagram <span class="label label-danger pull-right">$120</span></a>
+                  <a href="javascript:void(0)" class="product-title">30 dias servidor - Instagram <span class="label label-danger pull-right">R$120</span></a>
                       <span class="product-description">
                         @perfilcliente. Tags: Vendas, Outback, Outratag
                       </span>
@@ -329,7 +329,7 @@
                 </div>
                 <div class="product-info">
                   <a href="javascript:void(0)" class="product-title">180 dias servidor - Instagram
-                    <span class="label label-success pull-right">$400</span></a>
+                    <span class="label label-success pull-right">R$400</span></a>
                       <span class="product-description">
                         @perfilcliente. Tags: Vendas, Outback, Outratag
                       </span>
