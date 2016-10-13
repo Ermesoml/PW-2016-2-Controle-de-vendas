@@ -138,13 +138,13 @@
           
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="user-image" alt="User Image">
+              <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Ermesom Lourenço</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="img-circle" alt="User Image">
+                <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Ermesom Lourenço - Web Developer
@@ -280,7 +280,7 @@
         <li class="header">Legendas</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Importante</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Alerta</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Infromação</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Informação</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
