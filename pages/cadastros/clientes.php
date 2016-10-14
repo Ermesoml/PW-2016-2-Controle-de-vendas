@@ -38,7 +38,7 @@
             <div class="form-group">
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Telefone</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(   ) ____-____">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(    ) ____-____">
               </div>
               <div class="col-md-10">
                 <label for="exampleInputEmail1">Email</label>
