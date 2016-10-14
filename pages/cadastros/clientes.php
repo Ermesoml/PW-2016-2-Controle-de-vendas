@@ -32,17 +32,17 @@
               </div>
               <div class="col-md-10">
                 <label for="exampleInputEmail1">Nome</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu Nome">
               </div>
             </div>
             <div class="form-group">
               <div class="col-md-2">
                 <label for="exampleInputEmail1">Telefone</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(   ) ____-____">
               </div>
               <div class="col-md-10">
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite seu email">
               </div>
             </div>
           </div>
