@@ -1,3 +1,8 @@
+<?php
+  require_once($_SERVER['DOCUMENT_ROOT'].'/model/connection.php');
+  $user->IsLogged();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -24,7 +29,7 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Alternar navegação</span>
+        <span class="sr-only">Toggle navigation</span>
       </a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
@@ -47,7 +52,7 @@
                       </div>
                       <h4>
                         Diego Lima - Gerente
-                        <small><i class="fa fa-clock-o"></i> 5 minutos</small>
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
                       </h4>
                       <p>Como está o andamento do projeto ADM?</p>
                     </a>
@@ -60,7 +65,7 @@
                       </div>
                       <h4>
                         Ruan - Teste
-                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
                       </h4>
                       <p>Precisamos rever aquela regra de negócio.</p>
                     </a>
@@ -72,7 +77,7 @@
                       </div>
                       <h4>
                         Márcio - Diretor
-                        <small><i class="fa fa-clock-o"></i> Hoje</small>
+                        <small><i class="fa fa-clock-o"></i> Today</small>
                       </h4>
                       <p>Já utilizou WebBrocker do Delphi?</p>
                     </a>
@@ -84,7 +89,7 @@
                       </div>
                       <h4>
                         Sistema
-                        <small><i class="fa fa-clock-o"></i> 2 dias</small>
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
                       </h4>
                       <p>Resultado do mês de marco.</p>
                     </a>
@@ -138,16 +143,16 @@
           
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Ermesom Lourenço</span>
+              <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs"><?php echo $user->GetData('nome'); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Ermesom Lourenço - Web Developer
+                  <?php echo $user->GetData('nome'); ?> - <?php echo $user->GetData('cargo'); ?> 
                   <small>Membro desde Março. 2016</small>
                 </p>
               </li>
@@ -158,7 +163,7 @@
                     <a href="#">Vendas</a>
                   </div>
                   <div class="col-xs-6 text-center">
-                    <a href="#">Clientes</a>
+                    <a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/relatorios/acompanhamentos.php">Acompanhamentos</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -169,15 +174,15 @@
                   <a href="#" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/logout.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
+          <!--<li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          </li>-->
         </ul>
       </div>
 
@@ -190,10 +195,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src=<?php $_SERVER['DOCUMENT_ROOT']?>"/dist/img/user6-128x128.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Ermesom Lourenço</p>
+          <p><?php echo $user->GetData('nome'); ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -232,9 +237,10 @@
           </a>
           <ul class="treeview-menu">
             <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/cadastros/clientes.php"><i class="fa fa-circle-o"></i> Clientes</a></li>
+            <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/cadastros/acompanhamentos.php"><i class="fa fa-circle-o"></i> Acompanhamentos</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Produtos\Serviços</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Usuários</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Categorias\Redes sociais</a></li>
+            <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/cadastros/usuarios.php"><i class="fa fa-circle-o"></i> Usuários</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Categ.\Redes sociais</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -246,11 +252,21 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Clientes</a></li>
+            <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/relatorios/clientes.php"><i class="fa fa-circle-o"></i> Clientes</a></li>
+            <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/relatorios/acompanhamentos.php"><i class="fa fa-circle-o"></i> Acompanhamentos</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Vendas\Usuário</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Vendas\Cliente</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Comissões</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Receita\Custos\Lucro</a></li>
+
+            <?php
+              if ($user->GetData('tipo') == 'A')
+              {
+            ?>
+                <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/relatorios/usuarios.php"><i class="fa fa-circle-o"></i> Usuários</a></li>
+            <?php
+              } 
+            ?>
           </ul>
         </li>
         <li class="treeview">
@@ -277,10 +293,8 @@
           </a>
         </li>
         <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/documentation/index.html"><i class="fa fa-book"></i> <span>Ajuda</span></a></li>
-        <li class="header">Legendas</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Importante</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Alerta</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Informação</span></a></li>
+        <li class="header">Desenvolvimento</li>
+        <li><a href=<?php $_SERVER['DOCUMENT_ROOT']?>"/pages/ui/icons.html"><i class="fa fa-circle-o text-red"></i> <span>Icones</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
